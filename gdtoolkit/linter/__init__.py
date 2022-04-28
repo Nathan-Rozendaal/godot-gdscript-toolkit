@@ -16,7 +16,7 @@ from . import (
 )
 
 PASCAL_CASE = r"([A-Z][a-z0-9]*)+"
-SNAKE_CASE = r"[a-z][a-z0-9]*(_[a-z0-9]+)*"
+SNAKE_CASE = r"[a-zA-Z][a-zA-Z0-9]*(_[a-zA-Z0-9]+)*"
 PRIVATE_SNAKE_CASE = r"_?{}".format(SNAKE_CASE)
 UPPER_SNAKE_CASE = r"[A-Z][A-Z0-9]*(_[A-Z0-9]+)*"
 
