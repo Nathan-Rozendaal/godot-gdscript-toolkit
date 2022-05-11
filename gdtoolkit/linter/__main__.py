@@ -65,6 +65,7 @@ def main():
     for file_path in files:
         problems_total += _lint_file(file_path, config)
     if problems_total > 0:
+        print("::set-output name=checks-failed::1")
         print(
             "Failure: {} problem{} found".format(
                 problems_total, "" if problems_total == 1 else "s"
