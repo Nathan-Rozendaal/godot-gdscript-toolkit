@@ -8,7 +8,7 @@ def print_problem(problem: Problem, file_path: str) -> None:  # TODO: colors
             file_path,
             problem.line,
             problem.column,
-            problem.description
+            problem.description + " " + file_path + " " + problem.line
         ),
         file=sys.stderr,
     )
